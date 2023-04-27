@@ -1,0 +1,230 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  select {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+  .dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .dark-mode header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode button {
+    background-color: #444;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #333;
+  }
+  
+  .dark-mode .modal-content {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .dark-mode select {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .dark-mode option {
+    background-color: #333;
+    color: #fff;
+  }
+  .dots {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #333;
+    border-radius: 50%;
+  }
+  
+  .dots::before,
+  .dots::after {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dots::before {
+    left: -3rem;
+  }
+  
+  .dots::after {
+    left: 3rem;
+  }
+  #settings-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #settings-btn:hover {
+    color: #666;
+  }
+  
+  .fa-cog:before {
+    content: "\f013";
+  }
+  #settings-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .line {
+    display: block;
+    width: 2rem;
+    height: 2px;
+    background-color: #333;
+    margin: 0.5rem auto;
+  }
+  
+  #settings-btn:hover .line {
+    background-color: #666;
+  }
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .comment-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .comment-container h2 {
+    text-align: center;
+  }
+  
+  #comment-list {
+    margin-top: 1rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+  }
+  
+  .comment {
+    margin-bottom: 1rem;
+  }
+  
+  .comment h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .comment p {
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container, .comment-container {
+      width: 90%;
+    }
+  }
+  .map-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .map-container h2 {
+    text-align: center;
+  }
+  
+  .map-box {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 1rem;
+  }
+  
+  .map-box img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .map-container {
+      width: 90%;
+    }
+  }
+  

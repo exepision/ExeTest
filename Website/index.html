@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ExeTest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-BZuy4juzwWPeJ8mpnn4CPIE9zQ5jKU5rz6D5h6AI/2e/CYIFHZWusG8+88k/9+wNpPamrDlO8IjvweHPZaYPFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+        <h1>ExeTest</h1>
+        <button id="settings-btn"><span class="line"></span><span class="line"></span><span class="line"></span></button>
+      </header>
+      
+      <main>
+        <div class="container">
+          <h2>Section 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu lectus nec tellus faucibus eleifend. Nulla facilisi. Sed quis ligula vitae massa faucibus eleifend. Fusce gravida quam nec aliquet pulvinar. Praesent et sapien ex. Suspendisse potenti.</p>
+        </div>
+      
+        <div class="container">
+          <h2>Section 2</h2>
+          <p>Sed euismod id orci non venenatis. Nam vel massa non ex bibendum congue in id elit. Duis id erat et urna pharetra ultricies. Sed dapibus tincidunt enim, sed aliquam ipsum elementum in. Donec aliquam dui sed felis interdum, sed consequat urna facilisis.</p>
+        </div>
+      
+        <div class="map-container">
+          <h2>Section 3</h2>
+          <div class="map-box">
+            <img src="Map.png" alt="Map">
+          </div>
+        </div>
+      
+        <div class="comment-container">
+          <h2>Comments</h2>
+          <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+      
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+      
+            <button type="submit">Post</button>
+          </form>
+      
+          <div id="comment-list">
+            <!-- Comments will be displayed here -->
+          </div>
+        </div>
+      </main>
+      
+    <div id="settings-modal" class="modal">
+      <div class="modal-content">
+        <h2>Settings</h2>
+        <label for="mode-select">Choose a mode:</label>
+        <select id="mode-select">
+          <option value="light">Light Mode</option>
+          <option value="dark">Dark Mode</option>
+        </select>
+        <button id="save-btn">Save</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
